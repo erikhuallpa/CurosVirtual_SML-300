@@ -1,0 +1,35 @@
+[PROJECT]
+Target=ejemplo1.hex
+Processor_Text=PIC18F4550
+CCSVersion=5.076
+Compiler=PCH
+[Target Data]
+FileList=ejemplo1.c
+[ejemplo1.c]
+Type=4
+[mru-list]
+1=ejemplo1.c
+
+[defines]
+buildcount=4
+
+[Opened Files]
+1=ejemplo1.c
+t1=1
+Count=1
+
+[ProjectLog]
+Days=1
+D1=11-05-2020
+D1_L=4
+D1_L1=[45617]Stopped Editing.
+D1_L2=[45994]Started Editing.
+D1_L3=[46303]Stopped Editing.
+TotalEdit=15
+TotalDebug=0
+D1_E=15
+D1_D=0
+D1_L4=[46641]Project Closed.
+[Units]
+Count=1
+1=ejemplo1 (main)
