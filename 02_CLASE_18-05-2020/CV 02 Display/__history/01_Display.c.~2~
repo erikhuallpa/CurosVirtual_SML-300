@@ -1,0 +1,22 @@
+#INCLUDE <18F4550.H>
+#FUSES XT
+#FUSES NOWDT
+#USE DELAY (CLOCK= 4000000)
+
+#USE STANDARD_IO(D)
+int tiempo=500;
+
+void main()
+{
+   while(true)
+   {
+      output_d(0b1111001); //E
+      delay_ms(tiempo);
+      output_d(0b1110111); //R
+      delay_ms(tiempo);     
+      output_d(0b0110000); //I
+      delay_ms(tiempo);     
+      output_d(0b0111001); //C
+      delay_ms(tiempo);                
+   }
+}

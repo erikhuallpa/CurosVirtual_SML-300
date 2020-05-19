@@ -1,0 +1,31 @@
+[PROJECT]
+Target=01_Display.hex
+Processor_Text=PIC18F4550
+CCSVersion=5.076
+Compiler=PCH
+[Target Data]
+FileList=01_Display.c
+[01_Display.c]
+Type=4
+[mru-list]
+1=01_Display.c
+
+[defines]
+buildcount=5
+
+[Opened Files]
+1=..\CV 02 Motores\Ejemplo 01\EjemploMotorDC.c
+t1=1
+Count=1
+
+[ProjectLog]
+Days=1
+D1=18-05-2020
+D1_L=4
+D1_L1=[35540]Stopped Editing.
+D1_L2=[35654]Started Editing.
+D1_L3=[36125]Stopped Editing.
+D1_L4=[37446]Project Closed.
+[Units]
+Count=1
+1=01_Display (main)

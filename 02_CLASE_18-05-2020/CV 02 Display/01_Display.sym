@@ -1,0 +1,66 @@
+000     @SCRATCH
+001     @SCRATCH
+001     _RETURN_
+002     @SCRATCH
+003     @SCRATCH
+004     tiempo
+005     @delay_ms1.P1
+F83     PSP_DATA
+FB4.6   C1OUT
+FB4.7   C2OUT
+FBB     CCP_2
+FBB     CCP_2_LOW
+FBC     CCP_2_HIGH
+FBE     CCP_1
+FBE     CCP_1_LOW
+FBF     CCP_1_HIGH
+FE1-FE2 @READ_PACKED_MEMORY.P1
+FE1-FE2 @WRITE_PACKED_MEMORY.P2
+FE9-FEA @WRITE_PROGRAM_MEMORY.P1
+FE9-FEA @WRITE_PACKED_MEMORY.P2
+FE9-FEA @READ_PACKED_MEMORY.P3
+FE9-FEA @READ_PROGRAM_MEMORY.P4
+FF6-FF8 @READ_PROGRAM_MEMORY.P1
+FF6-FF8 @WRITE_PROGRAM_MEMORY.P2
+
+ROM Allocation:
+000004  @delay_ms1
+000030  @cinit1
+000030  main
+000044  @cinit2
+
+Project Directory:
+    D:\ERIK-20\Escritorio\CV 02 Display\
+
+Project Files:
+    01_Display.c                                            [18-may.-20 09:57  CRC=20C1671F]
+    C:\Program Files (x86)\PICC\Devices\18F4550.H           [15-ene.-18 15:57  CRC=06200171]
+
+Source signature=2D016A01
+Program memory checksum=0000
+Program memory CRC=0000
+Hex file CRC=3B40
+
+Units:
+    01_Display (main)
+
+Compiler Settings:
+    Processor:      PIC18F4550
+    Pointer Size:   16
+    ADC Range:      0-255
+    Opt Level:      9
+    Short,Int,Long: UNSIGNED: 1,8,16
+    Float,Double:   32,32
+    Compile Mode:       CCS5
+
+Output Files:
+    XREF file:   01_Display.xsym
+    Errors:      01_Display.err
+    Ext Symbols: 01_Display.esym
+    INHX32:      01_Display.hex
+    Symbols:     01_Display.sym
+    List:        01_Display.lst
+    Debug/COFF:  01_Display.cof
+    Project:     01_Display.ccspjt
+    Call Tree:   01_Display.tre
+    Statistics:  01_Display.STA

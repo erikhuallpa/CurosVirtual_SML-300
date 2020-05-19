@@ -1,0 +1,64 @@
+000     @SCRATCH
+001     @SCRATCH
+001     _RETURN_
+002     @SCRATCH
+003     @SCRATCH
+005     main.@SCRATCH1
+F83     PSP_DATA
+FB4.6   C1OUT
+FB4.7   C2OUT
+FBB     CCP_2_LOW
+FBB     CCP_2
+FBC     CCP_2_HIGH
+FBE     CCP_1
+FBE     CCP_1_LOW
+FBF     CCP_1_HIGH
+FE1-FE2 @WRITE_PACKED_MEMORY.P1
+FE1-FE2 @READ_PACKED_MEMORY.P2
+FE9-FEA @WRITE_PACKED_MEMORY.P1
+FE9-FEA @WRITE_PROGRAM_MEMORY.P2
+FE9-FEA @READ_PROGRAM_MEMORY.P3
+FE9-FEA @READ_PACKED_MEMORY.P4
+FF6-FF8 @WRITE_PROGRAM_MEMORY.P1
+FF6-FF8 @READ_PROGRAM_MEMORY.P2
+
+ROM Allocation:
+000004  main
+000004  @cinit1
+000014  @cinit2
+
+Project Directory:
+    D:\ERIK-20\Escritorio\CV 02 Motores\Ejemplo 01\
+
+Project Files:
+    EjemploMotorDC.c                                        [18-may.-20 10:24  CRC=97D74FF2]
+    C:\Program Files (x86)\PICC\Devices\18F4550.H           [15-ene.-18 15:57  CRC=06200171]
+
+Source signature=A41752D4
+Program memory checksum=0000
+Program memory CRC=0000
+Hex file CRC=F9CE
+
+Units:
+    EjemploMotorDC (main)
+
+Compiler Settings:
+    Processor:      PIC18F4550
+    Pointer Size:   16
+    ADC Range:      0-255
+    Opt Level:      9
+    Short,Int,Long: UNSIGNED: 1,8,16
+    Float,Double:   32,32
+    Compile Mode:       CCS5
+
+Output Files:
+    XREF file:   EjemploMotorDC.xsym
+    Errors:      EjemploMotorDC.err
+    Ext Symbols: EjemploMotorDC.esym
+    INHX32:      EjemploMotorDC.hex
+    Symbols:     EjemploMotorDC.sym
+    List:        EjemploMotorDC.lst
+    Debug/COFF:  EjemploMotorDC.cof
+    Project:     EjemploMotorDC.ccspjt
+    Call Tree:   EjemploMotorDC.tre
+    Statistics:  EjemploMotorDC.STA

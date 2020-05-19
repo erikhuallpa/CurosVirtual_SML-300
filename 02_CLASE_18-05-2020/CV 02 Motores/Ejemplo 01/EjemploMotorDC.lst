@@ -1,0 +1,74 @@
+CCS PCH C Compiler, Version 5.076, 56587               18-may.-20 10:24
+
+               Filename:   D:\ERIK-20\Escritorio\CV 02 Motores\Ejemplo 01\EjemploMotorDC.lst
+
+               ROM used:   46 bytes (0%)
+                           Largest free fragment is 32722
+               RAM used:   5 (0%) at main() level
+                           5 (0%) worst case
+               Stack used: 0 locations
+               Stack size: 31
+
+*
+0000:  GOTO   0004
+.................... #INCLUDE <18F4550.H> 
+.................... //////////// Standard Header file for the PIC18F4550 device //////////////// 
+.................... /////////////////////////////////////////////////////////////////////////// 
+.................... ////        (C) Copyright 1996, 2014 Custom Computer Services          //// 
+.................... //// This source code may only be used by licensed users of the CCS C  //// 
+.................... //// compiler.  This source code may only be distributed to other      //// 
+.................... //// licensed users of the CCS C compiler.  No other use, reproduction //// 
+.................... //// or distribution is permitted without written permission.          //// 
+.................... //// Derivative programs created using this software in object code    //// 
+.................... //// form are not restricted in any way.                               //// 
+.................... /////////////////////////////////////////////////////////////////////////// 
+.................... #device PIC18F4550 
+....................  
+.................... #list 
+....................  
+.................... #FUSES XT 
+.................... #FUSES NOWDT 
+.................... #USE DELAY (CLOCK= 4000000) 
+....................  
+.................... #USE STANDARD_IO(C) 
+.................... #USE STANDARD_IO(D) 
+....................  
+.................... void main() 
+0004:  CLRF   FF8
+0006:  BCF    FD0.7
+0008:  MOVF   FC1,W
+000A:  ANDLW  C0
+000C:  IORLW  0F
+000E:  MOVWF  FC1
+0010:  MOVLW  07
+0012:  MOVWF  FB4
+.................... { 
+....................    while(true) 
+....................    { 
+....................       if(input(PIN_D0) == 0){ 
+0014:  BSF    F95.0
+0016:  BTFSC  F83.0
+0018:  GOTO   0024
+....................          output_high(PIN_C0); 
+001C:  BCF    F94.0
+001E:  BSF    F8B.0
+....................       }else{ 
+0020:  GOTO   0028
+....................          output_low(PIN_C0); 
+0024:  BCF    F94.0
+0026:  BCF    F8B.0
+....................       }       
+0028:  GOTO   0014
+....................    } 
+.................... } 
+*
+002C:  SLEEP 
+
+Configuration Fuses:
+   Word  1: C03F   PLL12 CPUDIV4 USBDIV XT FCMEN IESO
+   Word  2: 1E3E   PUT BROWNOUT BORV21 VREGEN NOWDT WDT32768
+   Word  3: 8700   CCP2C1 PBADEN LPT1OSC MCLR
+   Word  4: 00A1   STVREN NOLVP ICSP2 NOXINST NODEBUG
+   Word  5: C00F   NOPROTECT NOCPB NOCPD
+   Word  6: E00F   NOWRT NOWRTC NOWRTB NOWRTD
+   Word  7: 400F   NOEBTR NOEBTRB

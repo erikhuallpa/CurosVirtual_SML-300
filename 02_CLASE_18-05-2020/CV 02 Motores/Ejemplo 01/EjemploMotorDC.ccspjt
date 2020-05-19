@@ -1,0 +1,28 @@
+[PROJECT]
+Target=EjemploMotorDC.hex
+Processor_Text=PIC18F4550
+CCSVersion=5.076
+Compiler=PCH
+[Target Data]
+FileList=EjemploMotorDC.c
+[EjemploMotorDC.c]
+Type=4
+[mru-list]
+1=EjemploMotorDC.c
+[Units]
+Count=1
+1=EjemploMotorDC (main)
+
+[defines]
+buildcount=1
+
+[ProjectLog]
+Days=1
+D1=18-05-2020
+D1_L=2
+D1_L1=[37772]Stopped Editing.
+TotalEdit=0
+TotalDebug=0
+D1_E=0
+D1_D=0
+D1_L2=[38241]Project Closed.
